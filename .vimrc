@@ -19,26 +19,17 @@ call plug#end()
 
 set nocompatible " Use Vim mode
 set number " Display line numbers
+set relativenumber
 set background=dark " Using a dark background
 set backspace=indent,eol,start " Allow backspacing over autoindent, linebreaks, and start of insert action
 syntax on " Enable syntax highlighting
 set formatoptions=tcroq " Vim default, also continue comments in block
 let mapleader = "," " Map <leader> to ,
-
-" Turn on the Wild menu
-set wildmenu
-
-" Always show current position
-set ruler
-
-" Height of the command bar
-set cmdheight=1
-
-" Ignore case when searching
-set ignorecase
-
+set wildmenu " Turn on the Wild menu
+set ruler " Always show current position
+set cmdheight=1 " Height of the command bar
+set ignorecase " Ignore case when searching
 set smartcase " When searching try to be smart about cases
-
 
 " ----- Search Settings -----
 " start searching as it is typed
@@ -77,7 +68,7 @@ cnoremap Q q
 cnoremap Wq wq
 cnoremap WQ wq
 
-" NERDTree mappings
+"-------- NERDTree mappings ----------
 nnoremap <leader>n :NERDTreeFocus<CR>
 "nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
