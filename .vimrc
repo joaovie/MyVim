@@ -13,6 +13,10 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'whatyouhide/vim-gotham'
 Plug 'preservim/nerdtree'
 Plug 'itspriddle/vim-shellcheck'
+Plug 'vim-airline/vim-airline'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 call plug#end()
 
 "----------General Settings----------
@@ -75,3 +79,8 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
+
+
+" Indent guides plugin
+"let g:indent_guides_enable_on_vim_startup = 1
+
